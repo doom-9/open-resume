@@ -1,7 +1,8 @@
 FROM node:18-alpine as builder
 WORKDIR /app
 COPY . .
-RUN pnpm install --include=dev
+RUN npm install -g pnpm
+RUN pnpm install --frozen-lockfile
 RUN pnpm run build
 
 FROM node:18-alpine AS runner
