@@ -30,7 +30,11 @@ const ResumeControlBar = ({
 
   // Hook to update pdf when document changes
   useEffect(() => {
-    update();
+    update(
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="text-gray-500">Loading...</div>
+      </div>
+    );
   }, [update, document]);
 
   return (
