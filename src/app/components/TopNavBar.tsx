@@ -43,7 +43,7 @@ export const TopNavBar = () => {
               {text}
             </Link>
           ))}
-          <div className="ml-1 mt-1">
+          {/* <div className="ml-1 mt-1">
             <iframe
               src="https://ghbtns.com/github-btn.html?user=xitanggg&repo=open-resume&type=star&count=true"
               width="100"
@@ -51,7 +51,7 @@ export const TopNavBar = () => {
               className="overflow-hidden border-none"
               title="GitHub"
             />
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>
